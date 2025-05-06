@@ -22,4 +22,8 @@ app.get('/login', (req, res) => {
     res.send("<h1>Please Login in My Site</h1>");
 })
 
+app.get('/github', (req, res) => {
+    res.send("<h2>Response from github</h2>");
+})
+
 app.listen(port, ()=> console.log(`Server is running on port:${port}`));
